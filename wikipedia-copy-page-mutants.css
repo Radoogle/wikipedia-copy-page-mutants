@@ -1,0 +1,39 @@
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+aside {
+  background-color: #aaa;
+  width: 3rem;
+  /* height: 100vh; */
+}
+
+header {
+  background-color: #777;
+  width: 80vw;
+  height: 3rem;
+}
+
+main {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
