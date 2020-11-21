@@ -5,11 +5,10 @@
 /* GENERAL STYLES */
 
 /* Single-direction margin declaration to establish vertical rhythm. */
-h1,h2,h3,h4,h5,h6,
+h1,h2,h3,h4,h5,
 ul,ol,
-p,
-img {
-    margin-bottom: 1.5rem;
+p {
+  margin-bottom: 1.5rem;
 }
 
 
@@ -18,9 +17,15 @@ img {
 body {
   background-color: #f6f6f6;
   font-family: sans-serif;
-  font-size: 1.125rem;
+  font-size: .9rem;
   line-height: 1.5;
   min-width: 30.125rem;
+}
+
+main {
+  background-color: #fff;
+  width: calc(100% - 10rem);
+  min-width: 20.125rem;
 }
 
 h1, h2 {
@@ -48,53 +53,106 @@ h1, h2 {
 /* Definește proprietățile obișnuite ale modelului cutie pentru containerele de pe pagină (secțiunile).
  */
 
-.locations,
-.program,
-.gifts,
-.faq,
-.contact {
+section,
+article {
   width: 95%;
-  margin: 1.5rem auto;
-  padding: .5rem 1rem;
-  text-align: center;
+  margin: 1rem auto;
+  padding: 0 .5rem;
+  text-align: left;
 }
 
 
-/* Leagă fonturile externe și adaugă stilurile tipografice de bază. */
+/* Stilizează linkurile. */
 
-
-
-
-
-
-section {
-  margin-bottom: 1.5rem;
-  padding: .5rem .25rem;
+a {
+  text-decoration: none;
+  color: #0645AD;
 }
 
+a:visited {
+  color: #0B0080;  
+}
 
+a:hover {
+  text-decoration: underline;
+}
 
+/* =============================
 
+    ASIDE STYLES 
 
-
+=============================*/
 
 aside {
-  /* background-color: #f6f6f6; */
   width: 10rem;
-  /* float: left; */
-  /* height: 100vh; */
 }
 
 aside img {
   width: 100%;
 }
 
-main {
-  background-color: #fff;
-  /* float: right; */
-  width: calc(100% - 10rem);
-  min-width: 20.125rem;
+.page-nav section {
+  margin: 0 auto;
+  font-size: .8rem;
 }
+
+h6 {
+  color: hsla(0, 0%, 0%, .7);
+}
+
+h6::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  /* background-color: hsla(0, 0%, 0%, .3); */
+  border-bottom: 1px solid hsla(0, 0%, 0%, .2);
+  border-radius: 9999%;
+  margin-bottom: .3rem;
+}
+
+.page-nav {
+  text-align: right;
+}
+
+.edit-links {
+  color: hsla(0, 0%, 0%, .9);
+}
+
+.edit-links:hover {
+  color: #0645AD;
+}
+
+.edit-links::before {
+  content: "pen";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
