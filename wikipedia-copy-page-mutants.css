@@ -57,7 +57,7 @@ section,
 article {
   width: 95%;
   margin: 1rem auto;
-  padding: 0 .5rem;
+  padding: 0 .9rem;
   text-align: left;
 }
 
@@ -88,12 +88,13 @@ aside {
 }
 
 aside img {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 1.5rem;
 }
 
 .page-nav section {
   margin: 0 auto;
-  font-size: .8rem;
+  font-size: .75rem;
 }
 
 h6 {
@@ -116,7 +117,9 @@ h6::after {
 }
 
 .edit-links {
+  font-size: .8rem;
   color: hsla(0, 0%, 0%, .9);
+  padding-right: .9rem;
 }
 
 .edit-links:hover {
@@ -124,11 +127,19 @@ h6::after {
 }
 
 .edit-links::before {
-  content: "pen";
+  content: "\270e";
 }
 
+#settingsSymbol {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: hsla(0, 0%, 0%, .6);
+}
 
-
+#settingsSymbol a:hover {
+  text-decoration: none;
+  color: #000;
+}
 
 
 
