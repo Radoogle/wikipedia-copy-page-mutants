@@ -5,7 +5,7 @@
 /* GENERAL STYLES */
 
 /* Single-direction margin declaration to establish vertical rhythm. */
-h1,h2,h3,h4,h5,
+h2,h3,h4,h5,
 ul,ol,
 p {
   margin-bottom: 1.5rem;
@@ -166,14 +166,93 @@ header {
   margin-right: .25rem;
 }
 
+/* =============================
+
+    ARTICLE NAV STYLES 
+
+=============================*/
+
+.article-nav {
+  display: inline-block;
+  width: 100%;
+  line-height: 2rem;
+  padding: .5rem 0;
+  height: 2rem;
+}
+
+.article-nav ul li {
+  display: inline;
+  padding: .5rem .25rem;
+  margin: 0;
+  border: 1px solid #a7d7f9;
+  border-top: none;
+  border-left: none;
+  background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);
+}
+
+.article-nav ul li  {
+  color: #0645AD;
+}
+
+.article-nav ul li:nth-child(1) {
+  border: none;
+  color: #000;
+  background-image: none;
+}
+
+.article-nav ul li:nth-child(1) a:hover {
+  text-decoration: none;
+}
+
+/* .article-nav ul li::after {
+  content: "";
+  display: inline-block;
+} */
+
+
+
+.search-bar {
+  border-bottom: 1px solid #a7d7f9;
+  height: 2.0625rem;
+  padding: 0 .5rem .2rem .5rem;
+}
+
+.search-bar input {
+  line-height: 1.3rem;
+}
 
 
 
 
+/* =============================
 
+    MAIN SECTION STYLES 
 
+=============================*/
 
+#main {
+  border-top: none;
+  border-right: none;
+}
 
+.page-title h1 {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #999;
+}
+
+h3 {
+  font-size: .8rem;
+  letter-spacing: .02rem;
+}
 
 
 
