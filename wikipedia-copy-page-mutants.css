@@ -49,6 +49,9 @@ h1, h2 {
   /* display: table; */
 }
 
+.border {
+  border: 1px solid #a7d7f9;
+}
 
 /* Definește proprietățile obișnuite ale modelului cutie pentru containerele de pe pagină (secțiunile).
  */
@@ -142,13 +145,26 @@ h6::after {
 }
 
 
+/* =============================
 
+    HEADER STYLES 
 
+=============================*/
 
+.header-list li:first-child::before {
+  content: "\1F464";
+}
 
+header {
+  font-size: .8rem;
+  margin: .5rem;
+  text-align: right;
+}
 
-
-
+.header-list li {
+  display: inline-block;
+  margin-right: .25rem;
+}
 
 
 
