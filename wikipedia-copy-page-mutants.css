@@ -378,12 +378,62 @@ small {
   font-size: 1rem;
 }
 
+.gameplay figure {
+  /* display: inline-block; */
+  float: left;
+  width: 11.75rem;
+  border-color: #888;
+  background-color: #f6f6f6;
+  margin: 0 1rem 1rem 0;
+}
+ 
+.gameplay figure img {
+  width: 100%;
+  padding: .2rem;
+}
 
+.gameplay figcaption {
+  text-align: left;
+  padding: 0 .5rem .5rem;
+  /* line-height: 1rem; */
+}
 
+.references ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-size: .8rem;
+  line-height: 1.35rem;
+  padding-left: 2rem;
+}
 
+.further-reading ul,
+.external-links ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
 
+.categories {
+  width: 100%;
+  border-color: #888;
+  background-color: #f6f6f6;
+  /* margin: 0 1rem 1rem 0; */
+  padding: .5rem .3rem;
+  line-height: 1.5rem;
+}
 
+.categories ul li::after {
+  content: " \ff5C ";
+}
 
+.categories ul li:last-child::after {
+  content: none;
+}
+
+.categories h5,
+.categories ul,
+.categories ul li {
+  display: inline;
+}
 
 
 
