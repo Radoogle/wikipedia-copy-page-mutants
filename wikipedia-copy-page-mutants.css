@@ -6,7 +6,7 @@
 
 /* Single-direction margin declaration to establish vertical rhythm. */
 h2,h3,h4,h5,
-ul,ol,
+ul,
 p {
   margin-bottom: 1.5rem;
 }
@@ -53,6 +53,14 @@ h1, h2 {
   border: 1px solid #a7d7f9;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 figcaption {
   text-align: center;
   margin: 0;
@@ -68,8 +76,7 @@ sup {
 /* Definește proprietățile obișnuite ale modelului cutie pentru containerele de pe pagină (secțiunile).
  */
 
-section,
-article {
+section {
   width: 95%;
   margin: 1rem auto;
   padding: 0 .9rem;
@@ -260,7 +267,7 @@ header {
 
 .page-title h1 {
   font-size: 1.8rem;
-  font-style: italic;
+  /* font-style: italic; */
   margin-bottom: 0;
 }
 
@@ -293,8 +300,8 @@ h3 {
 
 .cover h5 {
   text-align: center;
-  font-style: italic;
-  font-weight: bold;
+  /* font-style: italic; */
+  /* font-weight: bold; */
   margin: 0;
   padding: .25rem 0;
 }
@@ -319,19 +326,57 @@ table tr td:nth-child(1) {
   padding-right: 0.8rem;
 }
 
+/* =============================
 
+    CONTENTS BOX STYLES 
 
+=============================*/
 
+.contents-box {
+  border-color: #888;
+  background-color: #f6f6f6;
+  width: 10rem;
+  padding: .5rem;
+  line-height: 1.5rem;
+}
 
+.contents-box h3 {
+  text-align: center;
+  margin: 0;
+}
 
+.indent {
+  padding-left: 1.2rem;
+  margin: 0;
+}
 
+/* =============================
 
+    ARTICLES STYLES 
 
+=============================*/
 
+h2 {
+  margin: 1rem 0 0 0;
+  font-size: 1.4rem;
+}
 
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #999;
+  margin-bottom: 1rem;
+}
 
+small {
+  font-size: 70%;
+}
 
-
+.gameplay h4 {
+  font-size: 1rem;
+}
 
 
 
