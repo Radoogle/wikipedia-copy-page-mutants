@@ -53,6 +53,18 @@ h1, h2 {
   border: 1px solid #a7d7f9;
 }
 
+figcaption {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: .8rem;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+
 /* Definește proprietățile obișnuite ale modelului cutie pentru containerele de pe pagină (secțiunile).
  */
 
@@ -121,8 +133,12 @@ h6::after {
 
 .edit-links {
   font-size: .8rem;
-  color: hsla(0, 0%, 0%, .9);
+  color: hsla(0, 0%, 0%, .7);
   padding-right: .9rem;
+}
+
+.edit-links:visited {
+  color: hsla(0, 0%, 0%, .7);
 }
 
 .edit-links:hover {
@@ -132,6 +148,10 @@ h6::after {
 .edit-links::before {
   content: "\270e";
 }
+
+/* .edit-links::before:hover {
+  text-decoration: none;
+} */
 
 #settingsSymbol {
   font-weight: 700;
@@ -221,9 +241,6 @@ header {
   line-height: 1.3rem;
 }
 
-
-
-
 /* =============================
 
     MAIN SECTION STYLES 
@@ -234,6 +251,12 @@ header {
   border-top: none;
   border-right: none;
 }
+
+/* =============================
+
+    TITLE STYLES 
+
+=============================*/
 
 .page-title h1 {
   font-size: 1.8rem;
@@ -252,7 +275,68 @@ h1::after {
 h3 {
   font-size: .8rem;
   letter-spacing: .02rem;
+  line-height: 2rem;
 }
+
+/* =============================
+
+    COVER IMG STYLES 
+
+=============================*/
+
+.cover {
+  border-color: #888;
+  background-color: #f6f6f6;
+  width: 18rem;
+  padding: .2rem .3rem;
+}
+
+.cover h5 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  padding: .25rem 0;
+}
+
+.cover figure img {
+  width: 100%;
+  padding: 0 1.4rem;
+}
+
+.cover figure figcaption {
+  line-height: .3rem;
+  margin-bottom: .7rem;
+}
+
+table {
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+table tr td:nth-child(1) {
+  font-weight: bold;
+  padding-right: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
