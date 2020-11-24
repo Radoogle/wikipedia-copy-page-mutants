@@ -46,6 +46,7 @@ h1, h2 {
 .float-right::after {
   content: "";
   clear: both;
+  display: block;
   /* display: table; */
 }
 
@@ -202,46 +203,43 @@ header {
 .article-nav {
   display: inline-block;
   width: 100%;
-  line-height: 2rem;
-  padding: .5rem 0;
-  height: 2rem;
+  background-color: #f6f6f6;
 }
 
-.article-nav ul li {
-  display: inline;
-  padding: .5rem .25rem;
+.article-nav ul {
   margin: 0;
+  position: relative;
+  top: 1px;
+  background: linear-gradient(to top, #e8f2f8 3px, #f6f6f6 100%);
+}
+
+.article-nav li {
+  display: inline-block;
+  color: #0645AD;
   border: 1px solid #a7d7f9;
   border-top: none;
-  border-left: none;
-  background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);
+  margin-left: -1px;
 }
 
-.article-nav ul li  {
-  color: #0645AD;
+.article-nav a {
+  display: inline-block;
+  padding: .4rem .35rem;
 }
 
-.article-nav ul li:nth-child(1) {
-  border: none;
+.article-nav li:nth-child(1) a {
   color: #000;
-  background-image: none;
+  z-index: 9;
+  position: relative;
+  top: 1px;
+  background-image: linear-gradient(to top, #fff, #f6f6f6);
 }
 
-.article-nav ul li:nth-child(1) a:hover {
+.article-nav li:nth-child(1) a:hover {
   text-decoration: none;
 }
 
-/* .article-nav ul li::after {
-  content: "";
-  display: inline-block;
-} */
-
-
-
 .search-bar {
-  border-bottom: 1px solid #a7d7f9;
-  height: 2.0625rem;
-  padding: 0 .5rem .2rem .5rem;
+  padding: 0 .5rem;
 }
 
 .search-bar input {
@@ -259,6 +257,14 @@ header {
   border-right: none;
 }
 
+main section {
+  position: relative;
+  top: -6px;
+  border-top: 1px solid #a7d7f9;
+  margin: 0;
+  padding: 0 1rem 1rem;
+}
+
 /* =============================
 
     TITLE STYLES 
@@ -269,6 +275,7 @@ header {
   font-size: 1.8rem;
   /* font-style: italic; */
   margin-bottom: 0;
+  margin-top: 1rem;
 }
 
 h1::after {
@@ -370,7 +377,8 @@ h2::after {
   margin-bottom: 1rem;
 }
 
-small {
+h2 small,
+h4 small {
   font-size: 70%;
 }
 
@@ -435,17 +443,34 @@ small {
   display: inline;
 }
 
+small {
+  font-size: 80%;
+}
 
+footer {
+  width: calc(100% - 10rem);
+  min-width: 20.125rem;
+  padding: 1.5rem 1rem;
+}
 
+footer ul li {
+  display: inline-block;
+  padding-right: 1rem;
+}
 
+.bottom-logo {
+  height: 3rem;
+}
 
+.bottom-logo a {
+  height: 100%;
+}
 
-
-
-
-
-
-
+.bottom-logo a img {
+  height: 100%;
+  border: 1px solid hsla(0, 0%, 0%, .2);
+  border-radius: 4px;
+}
 
 
 
